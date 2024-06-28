@@ -1,7 +1,6 @@
 import ItemListContainer from "./Components/Layout/ItemListContainer/ItemListContainer"
 import Footer from "./Components/Layout/Footer/Footer"
 import Navbar from "./Components/Layout/Navbar/Navbar"
-import Products from "./Components/Common/Products/Products"
 
 function App() {
  

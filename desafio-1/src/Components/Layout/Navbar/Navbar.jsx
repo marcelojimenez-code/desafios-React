@@ -12,6 +12,10 @@ const Navbar = () => {
         $('.sidenav').sidenav();
     }, []);*/
     
+    useEffect(() => {
+        const elems = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(elems, {});
+      }, []);
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
@@ -50,14 +54,14 @@ const Navbar = () => {
             <ul className="right hide-on-med-and-down">
 
                 { links.map(x => 
-                    <li><a href={x.url}>{x.link}</a></li>
+                    <li key={x.id}><a href={x.url}>{x.link}</a></li>
                 )}  
                 <li><CartWidget /></li>
             </ul>
 
             <ul id="nav-mobile" className="sidenav">
                 { links.map(x => 
-                    <li><a href={x.url}>{x.link}</a></li>
+                    <li key={x.id}><a href={x.url}>{x.link}</a></li>
                 )}  
                 <li><CartWidget /></li>
             </ul>

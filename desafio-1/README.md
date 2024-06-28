@@ -7,10 +7,13 @@ Desafio 1 : Componentes I
 ```
 
 1- Pagina completa Ecommerce
-![alt text](capturas/1.PNG)
+![alt text](capturas/des-1.1.PNG)
 
 2- NavBar
-![alt text](capturas/2.PNG)
+![alt text](capturas/des-1.2.PNG)
 
 3- Productos
-![alt text](capturas/3.PNG)
+![alt text](capturas/des-1.3.PNG)
+
+4- Captura de arbol de codigo
+![alt text](capturas/des-1.4.PNG)
