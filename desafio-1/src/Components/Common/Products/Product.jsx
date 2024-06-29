@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Product.css'
 
 const Product = props => {
 
@@ -15,7 +16,9 @@ const Product = props => {
 
     const increment = () => {
         // Incrementar la cantidad
-        setCount(prevCount => prevCount + 1);
+        if (count < stock) {
+            setCount(prevCount => prevCount + 1);
+        }
     };
 
     const decrement = () => {
@@ -34,7 +37,7 @@ const Product = props => {
 
     const precioTotal = () => {
         // Graba el precio de los productos por el precio
-        setTotalPrice(addProduct * precio);
+        setTotalPrice(addProduct * price);
     };
 
   return (
@@ -42,7 +45,7 @@ const Product = props => {
                 <div className="col s12 m3">
                     <div className="card hoverable">
                         <div className="card-image waves-effect waves-block waves-light">
-                            <img className="activator" src={img} />
+                            <img className="activator image-card" src={img} />
                         </div>
 
                         <div className="card-content">

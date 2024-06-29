@@ -6,11 +6,6 @@ import CartWidget from '../../Common/Cartwidget/CartWidget';
 const Navbar = () => {
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    /*useEffect(() => {
-        // Inicializar el plugin de sidenav al cargar el componente
-        $('.sidenav').sidenav();
-    }, []);*/
     
     useEffect(() => {
         const elems = document.querySelectorAll('.sidenav');
@@ -56,14 +51,14 @@ const Navbar = () => {
                 { links.map(x => 
                     <li key={x.id}><a href={x.url}>{x.link}</a></li>
                 )}  
-                <li><CartWidget /></li>
+                <CartWidget />
             </ul>
 
             <ul id="nav-mobile" className="sidenav">
                 { links.map(x => 
                     <li key={x.id}><a href={x.url}>{x.link}</a></li>
                 )}  
-                <li><CartWidget /></li>
+                <CartWidget />
             </ul>
             <a href="#" data-target="nav-mobile" className="sidenav-trigger"><i className="material-icons">menu</i></a>
 
