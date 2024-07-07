@@ -19,9 +19,9 @@ const ItemCount = () => {
   return (
         <>
             <div className='center-align'>
-                <Button className="btn-floating #ffb74d orange lighten-2"><i class="material-icons">remove</i></Button>
+                <Button className="btn-floating #ffb74d orange lighten-2"><i className="material-icons">remove</i></Button>
                 <span className="card-title">{count}</span>
-                <Button className="btn-floating #ffb74d orange lighten-2 pulse"><i class="material-icons">add</i></Button>
+                <Button className="btn-floating #ffb74d orange lighten-2 pulse"><i className="material-icons">add</i></Button>
             </div>
         </>
   )

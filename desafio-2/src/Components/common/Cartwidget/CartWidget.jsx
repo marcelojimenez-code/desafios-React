@@ -6,12 +6,12 @@ const CartWidget = () => {
     {
         id: 5,
         link: 'Carrito',
-        url: 'carrito'
+        url: 'detail'
     },
     {
         id: 6,
         link: 'Total',
-        url: 'detalle'
+        url: 'detail'
     },
   ] 
 
@@ -19,7 +19,7 @@ const CartWidget = () => {
 
     <>
       <li key={links_carro[0].id}><a href={links_carro[0].url}><i className="material-icons">shopping_cart</i></a></li>
-      <li key={links_carro[1].id}><a href={links_carro[1].url}><span className="new badge blue">4 Productos</span></a></li>
+      <li key={links_carro[1].id}><a href={links_carro[1].url}><span className="new badge blue">55</span></a></li>
     </>
 
   )
