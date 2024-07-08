@@ -7,6 +7,7 @@ import Services from "./Components/pages/Services/Services";
 import Products from "./Components/pages/Products/Products";
 import Login from "./Components/pages/Login/Login";
 import Product from "./Components/pages/Products/Product";
+import { Index } from './Components/pages/Index';
 
 
 function App() {
@@ -22,13 +23,15 @@ function App() {
     <>
       <BrowserRouter>
           <Routes>
-              <Route exact index path="/" element={<Layout/>} />
-              <Route exact path="search" element={<Search/>}/>
-              <Route exact path="services"  element={<Services/>}/>
-              <Route exact path="products" element={<Products/>}/>
-              <Route exact path="products/:productId" element={<Product/>}/>
-              <Route exact path="login" element={<Login/>}/>
+            <Route element={<Layout />}>            
+              <Route exact index path="/" element={<Index/>} />
+              <Route exact path="/search" element={<Search/>}/>
+              <Route exact path="/services"  element={<Services/>}/>
+              <Route exact path="/products" element={<Products/>}/>
+              <Route exact path="/products/:productId" element={<Product/>}/>
+              <Route exact path="/login" element={<Login/>}/>
               <Route path="*" element={<h1>404 no encontrado</h1>} />
+              </Route>
           </Routes>    
       </BrowserRouter>
     </>

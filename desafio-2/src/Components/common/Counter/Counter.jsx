@@ -11,7 +11,7 @@ const Counter = ({ initial, min, max, onAdd, productTitle, productPrice }) => {
             setCount(prevCount => prevCount + 1);
         }
         else{
-            M.toast({ html: `No hay más ${productTitle.title} en stock`, classes: 'red lighten-1' });
+            M.toast({ html: `No hay más ${productTitle} en stock`, classes: 'red lighten-1' });
         }
     };
 
