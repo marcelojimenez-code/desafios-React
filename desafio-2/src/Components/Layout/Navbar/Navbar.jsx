@@ -14,25 +14,19 @@ const Navbar = () => {
         },
         {
             id: 2,
-            link: 'Search',
-            url: '/search'
+            link: 'Category',
+            url: '/category'
         },
         {
             id: 3,
-            link: 'Services',
-            url: '/services'
-        },
-        {
-            id: 4,
             link: 'Products',
             url: '/products'
         },
         {
-            id: 5,
+            id: 4,
             link: 'Login',
             url: '/login'
         },
-
     ] 
 
   return (

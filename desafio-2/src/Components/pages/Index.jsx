@@ -1,4 +1,5 @@
-import Products from "./Products/Products"
+import Category from "./Category/Category"
+import productsData from '../../data/productos.json';
 
 export const Index = () => {
 
@@ -15,7 +16,7 @@ export const Index = () => {
                 <br /><br />
             </div>
 
-            <Products />
+            <Category products={productsData} />
         </div>
 
         </>

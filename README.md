@@ -22,3 +22,5 @@ Desafio 1 : Componentes I
 ```python
 Desafio 2 : Routing y navegación
 ```
+
+![Video de demostración] (capturas/captura.webm)

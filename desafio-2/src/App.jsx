@@ -8,7 +8,9 @@ import Products from "./Components/pages/Products/Products";
 import Login from "./Components/pages/Login/Login";
 import Product from "./Components/pages/Products/Product";
 import { Index } from './Components/pages/Index';
+import Category from './Components/pages/Category/Category';
 
+import productsData from './data/productos.json';
 
 function App() {
  
@@ -25,6 +27,7 @@ function App() {
           <Routes>
             <Route element={<Layout />}>            
               <Route exact index path="/" element={<Index/>} />
+              <Route exact path="/category"  element={<Category products={productsData} />}/>
               <Route exact path="/search" element={<Search/>}/>
               <Route exact path="/services"  element={<Services/>}/>
               <Route exact path="/products" element={<Products/>}/>
